@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2009 The Android Open Source Project
  * Copyright (c) 2012, The Linux Foundation. All rights reserved.
- * Not a Contribution.
+ * Copyright (C) 2013 Freescale Semiconductor, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -561,6 +561,7 @@ protected:
                                 // to boost soft sounds, used to adjust volume curves accordingly
 
         Vector <HwModule *> mHwModules;
+        bool mDeviceIsHdmidongle;
 
 #ifdef AUDIO_POLICY_TEST
         Mutex   mLock;
